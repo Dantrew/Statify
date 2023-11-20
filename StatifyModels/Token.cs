@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace StatifyAPI.Models
+namespace StatifyModels
 {
     public class Token
     {

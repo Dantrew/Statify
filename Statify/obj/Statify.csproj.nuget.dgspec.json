@@ -4,89 +4,12 @@
     "C:\\Users\\jojje\\OneDrive\\Systemutveckling\\Github\\Statify\\Statify\\Statify.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jojje\\OneDrive\\Systemutveckling\\Github\\Statify\\Statify.Tests\\Statify.Tests.csproj": {
+    "C:\\Users\\jojje\\OneDrive\\Systemutveckling\\Github\\Statify\\StatifyAPI\\StatifyServices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jojje\\OneDrive\\Systemutveckling\\Github\\Statify\\Statify.Tests\\Statify.Tests.csproj",
-        "projectName": "Statify.Tests",
-        "projectPath": "C:\\Users\\jojje\\OneDrive\\Systemutveckling\\Github\\Statify\\Statify.Tests\\Statify.Tests.csproj",
-        "packagesPath": "C:\\Users\\jojje\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jojje\\OneDrive\\Systemutveckling\\Github\\Statify\\Statify.Tests\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\jojje\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net7.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
-          "dependencies": {
-            "Microsoft.NET.Test.Sdk": {
-              "target": "Package",
-              "version": "[17.7.1, )"
-            },
-            "coverlet.collector": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[3.2.0, )"
-            },
-            "xunit": {
-              "target": "Package",
-              "version": "[2.4.2, )"
-            },
-            "xunit.runner.visualstudio": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.4.5, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\jojje\\OneDrive\\Systemutveckling\\Github\\Statify\\StatifyAPI\\StatifyAPI.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\jojje\\OneDrive\\Systemutveckling\\Github\\Statify\\StatifyAPI\\StatifyAPI.csproj",
-        "projectName": "StatifyAPI",
-        "projectPath": "C:\\Users\\jojje\\OneDrive\\Systemutveckling\\Github\\Statify\\StatifyAPI\\StatifyAPI.csproj",
+        "projectUniqueName": "C:\\Users\\jojje\\OneDrive\\Systemutveckling\\Github\\Statify\\StatifyAPI\\StatifyServices.csproj",
+        "projectName": "StatifyServices",
+        "projectPath": "C:\\Users\\jojje\\OneDrive\\Systemutveckling\\Github\\Statify\\StatifyAPI\\StatifyServices.csproj",
         "packagesPath": "C:\\Users\\jojje\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\jojje\\OneDrive\\Systemutveckling\\Github\\Statify\\StatifyAPI\\obj\\",
         "projectStyle": "PackageReference",
@@ -104,7 +27,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\jojje\\OneDrive\\Systemutveckling\\Github\\Statify\\StatifyModels\\StatifyModels.csproj": {
+                "projectPath": "C:\\Users\\jojje\\OneDrive\\Systemutveckling\\Github\\Statify\\StatifyModels\\StatifyModels.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -149,6 +76,61 @@
         }
       }
     },
+    "C:\\Users\\jojje\\OneDrive\\Systemutveckling\\Github\\Statify\\StatifyModels\\StatifyModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jojje\\OneDrive\\Systemutveckling\\Github\\Statify\\StatifyModels\\StatifyModels.csproj",
+        "projectName": "StatifyModels",
+        "projectPath": "C:\\Users\\jojje\\OneDrive\\Systemutveckling\\Github\\Statify\\StatifyModels\\StatifyModels.csproj",
+        "packagesPath": "C:\\Users\\jojje\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jojje\\OneDrive\\Systemutveckling\\Github\\Statify\\StatifyModels\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jojje\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\jojje\\OneDrive\\Systemutveckling\\Github\\Statify\\Statify\\Statify.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -173,11 +155,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\jojje\\OneDrive\\Systemutveckling\\Github\\Statify\\Statify.Tests\\Statify.Tests.csproj": {
-                "projectPath": "C:\\Users\\jojje\\OneDrive\\Systemutveckling\\Github\\Statify\\Statify.Tests\\Statify.Tests.csproj"
-              },
-              "C:\\Users\\jojje\\OneDrive\\Systemutveckling\\Github\\Statify\\StatifyAPI\\StatifyAPI.csproj": {
-                "projectPath": "C:\\Users\\jojje\\OneDrive\\Systemutveckling\\Github\\Statify\\StatifyAPI\\StatifyAPI.csproj"
+              "C:\\Users\\jojje\\OneDrive\\Systemutveckling\\Github\\Statify\\StatifyAPI\\StatifyServices.csproj": {
+                "projectPath": "C:\\Users\\jojje\\OneDrive\\Systemutveckling\\Github\\Statify\\StatifyAPI\\StatifyServices.csproj"
               }
             }
           }

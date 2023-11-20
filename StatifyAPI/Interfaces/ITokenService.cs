@@ -1,6 +1,6 @@
-﻿using StatifyAPI.Models;
+﻿using StatifyModels;
 
-namespace StatifyAPI.Interfacse
+namespace StatifyServices.Interfaces
 {
     public interface ITokenService
     {

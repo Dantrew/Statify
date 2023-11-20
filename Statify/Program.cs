@@ -1,4 +1,4 @@
-using StatifyAPI.Services;
+using StatifyServices.Services;
 
 namespace Statify
 {
@@ -11,7 +11,18 @@ namespace Statify
 			// Add services to the container.
 			builder.Services.AddRazorPages();
             builder.Services.AddScoped<TokenService>();
+            builder.Services.AddScoped<LoginService>();
+            builder.Services.AddScoped<ProfileService>();
             builder.Services.AddHttpContextAccessor();
+
+            builder.Services.AddDistributedMemoryCache(); // Adds a default in-memory implementation of IDistributedCache
+            builder.Services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(30); // Set your preferred session timeout
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true; // Make the session cookie essential
+            });
+
             var app = builder.Build();
 
 			// Configure the HTTP request pipeline.
@@ -30,8 +41,8 @@ namespace Statify
 			app.UseAuthorization();
 
 			app.MapRazorPages();
-
-			app.Run();
+            app.UseSession();
+            app.Run();
 		}
 	}
 }

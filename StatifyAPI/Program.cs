@@ -1,4 +1,7 @@
 
+using StatifyAPI.Interfacse;
+using StatifyAPI.Services;
+
 namespace StatifyAPI
 {
     public class Program
@@ -6,6 +9,8 @@ namespace StatifyAPI
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            builder.Services.AddScoped<TokenService>();
 
             // Add services to the container.
 

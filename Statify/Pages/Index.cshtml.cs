@@ -1,20 +1,30 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using StatifyAPI.Services;
 
 namespace Statify.Pages
 {
 	public class IndexModel : PageModel
 	{
-		private readonly ILogger<IndexModel> _logger;
+		private readonly TokenService _tokenService;
 
-		public IndexModel(ILogger<IndexModel> logger)
+        public IndexModel(TokenService tokenService)
+        {
+            _tokenService = tokenService;
+        }
+
+        public async Task OnGetAsync()
 		{
-			_logger = logger;
-		}
+            var cookieOptions = new CookieOptions
+            {
+                Secure = true,
+                HttpOnly = true,
+            };
 
-		public void OnGet()
-		{
+            var token = await _tokenService.GetToken();
 
-		}
+            
+        }
 	}
 }

@@ -15,7 +15,7 @@ namespace StatifyAPI.Services
 
         public TokenService(IHttpContextAccessor httpContextAccessor)
         {
-            _httpContextAccessor = httpContextAccessor;
+            _httpContextAccessor = httpContextAccessor; // en kommentar
         }
 
         public async Task<Token> GetToken()

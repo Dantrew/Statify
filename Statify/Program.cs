@@ -1,3 +1,5 @@
+using StatifyAPI.Services;
+
 namespace Statify
 {
 	public class Program
@@ -8,8 +10,9 @@ namespace Statify
 
 			// Add services to the container.
 			builder.Services.AddRazorPages();
-
-			var app = builder.Build();
+            builder.Services.AddScoped<TokenService>();
+            builder.Services.AddHttpContextAccessor();
+            var app = builder.Build();
 
 			// Configure the HTTP request pipeline.
 			if (!app.Environment.IsDevelopment())

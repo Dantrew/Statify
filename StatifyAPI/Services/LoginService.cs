@@ -31,6 +31,7 @@ namespace StatifyServices.Services
         }
         private string GenerateRandomString(int length)
         {
+            // hejhej
             // Implement your logic to generate a random string of the specified length
             // This can be a simple random string generation or a more complex algorithm
             // Ensure that the generated string is URL-safe

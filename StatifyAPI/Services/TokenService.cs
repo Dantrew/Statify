@@ -1,9 +1,8 @@
-﻿using StatifyAPI.Interfacse;
-using StatifyAPI.Models;
+﻿using StatifyModels;
 using System.Text.Json;
 using System.Xml.Linq;
-
-namespace StatifyAPI.Services
+using StatifyServices.Interfaces;
+namespace StatifyServices.Services
 {
     public class TokenService : ITokenService
     {

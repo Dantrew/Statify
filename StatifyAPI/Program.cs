@@ -1,8 +1,6 @@
+using StatifyServices.Services;
 
-using StatifyAPI.Interfacse;
-using StatifyAPI.Services;
-
-namespace StatifyAPI
+namespace StatifyServices
 {
     public class Program
     {

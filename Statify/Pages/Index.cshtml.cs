@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using StatifyAPI.Services;
+using StatifyServices.Services;
 
 namespace Statify.Pages
 {
@@ -23,8 +23,6 @@ namespace Statify.Pages
             };
 
             var token = await _tokenService.GetToken();
-
-            
         }
 	}
 }

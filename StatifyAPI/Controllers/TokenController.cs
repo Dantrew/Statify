@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using StatifyAPI.Models;
-using StatifyAPI.Services;
+using StatifyServices.Services;
+using StatifyModels;
 
-namespace StatifyAPI.Controllers
+namespace StatifyServices.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

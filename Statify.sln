@@ -5,11 +5,11 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Statify", "Statify\Statify.csproj", "{6DA34934-D129-475A-A0E7-F409A77EE8F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatifyAPI", "StatifyAPI\StatifyAPI.csproj", "{93F5CE31-D100-41CA-922A-D0786D5F8470}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatifyServices", "StatifyAPI\StatifyServices.csproj", "{93F5CE31-D100-41CA-922A-D0786D5F8470}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Statify.Tests", "Statify.Tests\Statify.Tests.csproj", "{E9D037DE-CB3F-44B7-A3EA-385E3BC1EA4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Statify.Tests", "Statify.Tests\Statify.Tests.csproj", "{E9D037DE-CB3F-44B7-A3EA-385E3BC1EA4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatifyAPI.Tests", "StatifyAPI.Tests\StatifyAPI.Tests.csproj", "{87E5AA49-18EA-4F03-AC46-A380AF343F02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatifyModels", "StatifyModels\StatifyModels.csproj", "{4383DAF5-C155-4B22-869D-E059D566EF12}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{E9D037DE-CB3F-44B7-A3EA-385E3BC1EA4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9D037DE-CB3F-44B7-A3EA-385E3BC1EA4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9D037DE-CB3F-44B7-A3EA-385E3BC1EA4A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{87E5AA49-18EA-4F03-AC46-A380AF343F02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{87E5AA49-18EA-4F03-AC46-A380AF343F02}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{87E5AA49-18EA-4F03-AC46-A380AF343F02}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{87E5AA49-18EA-4F03-AC46-A380AF343F02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4383DAF5-C155-4B22-869D-E059D566EF12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4383DAF5-C155-4B22-869D-E059D566EF12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4383DAF5-C155-4B22-869D-E059D566EF12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4383DAF5-C155-4B22-869D-E059D566EF12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

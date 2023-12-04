@@ -46,7 +46,7 @@ jobs:
           # Assuming your JaCoCo XML reports are generated in a folder named "jacoco"
           # Adjust the path accordingly to match your project's setup
           $jacocoReportPath = "path/to/your/jacoco-report.xml"
-          .\.sonar\scanner\dotnet-sonarscanner begin /k:"Dantrew_Statify" /o:"lind-exe" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.coverage.jacoco.xmlReportPaths="$jacocoReportPath"
+          .\.sonar\scanner\dotnet-sonarscanner begin /k:"Dantrew_Statify" /o:"Dantrew" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.coverage.jacoco.xmlReportPaths="$jacocoReportPath"
           dotnet build --no-incremental
           dotnet test --collect "Code Coverage"
     
